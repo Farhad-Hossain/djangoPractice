@@ -1,0 +1,18 @@
+{% load static custom_tags %}
+{% title title %}
+<div class="card">
+    <div class="card-header">
+        Student enrollment form
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="">Student Name</label>
+                    <input type="text" class="form-control form-control-sm" name="student_name" placeholder="Student name ...">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="{% static 'js/abc.js' %}"></script>
