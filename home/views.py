@@ -8,3 +8,8 @@ def dashboard(request):
     return hx_render(request, 'home/dashboard.html', {
         "title": 'Dashboard'
     })
+
+def profile(request):
+    return hx_render(request, 'home/profile.html', {
+        "title": 'My Profile'
+    })

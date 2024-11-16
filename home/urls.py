@@ -26,6 +26,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.home_page, name='home'),
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('profile', views.profile, name='profile'),
     path('students/', include('student.urls')),
     path('admin/', admin.site.urls),
+    path('', include('django.contrib.auth.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

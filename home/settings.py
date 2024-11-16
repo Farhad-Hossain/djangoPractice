@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4(sa0l-vd)*_)@ohh5y7xns0a61m^%wm-b(war7ht52&ds0ojd
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+LOGOUT_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'home.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'event_management',
+        'USER': 'farhad',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -127,4 +131,4 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

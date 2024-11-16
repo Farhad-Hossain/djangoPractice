@@ -10,7 +10,6 @@ def menu_link(link, title, cls='', **kwargs):
     html = f'''
                 <li>
                   <a href="{link}"
-
                   ><i class="{cls}"></i>{title}</a>
                 </li>
             '''

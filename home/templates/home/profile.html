@@ -1,0 +1,22 @@
+{% load custom_tags %}
+{% title title %}
+<div class="card">
+    <div class="card-header">My Profile</div>
+    <div class="card-body">
+        <table>
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Name: </th>
+                    <td>{{ request.user.username }}</td>
+                </tr>
+                <tr>
+                    <th>Email: </th>
+                    <td>{{ request.user.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
